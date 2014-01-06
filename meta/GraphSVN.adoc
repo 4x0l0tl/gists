@@ -1,8 +1,7 @@
-= How to create a GraphGist
+= Source Code Revision Graph Example
 
 :neo4j-version: 2.0.0
-:author: Anders Nawroth
-:twitter: @nawroth
+:author: Nathan Ford
 
 You create a GraphGist by creating a https://gist.github.com/[GitHub Gist] in http://asciidoctor.org/docs/asciidoc-quick-reference/[AsciiDoc] and enter the URL to it in the form on this page.
 Alternatively, you can put an AsciiDoc document in https://www.dropbox.com/[Dropbox] and enter the public URL in the form.
@@ -16,21 +15,10 @@ Read below to get the full details.
 
 == Include a query console
 
-+//console+
-
-becomes:
-
 //console
 
 == Define a http://docs.neo4j.org/chunked/snapshot/cypher-query-lang.html[Cypher] query
 
- [source,cypher]
- ----
- CREATE (n{name:'cypher'})-[r:LIKES]->({name:'icecream'})
- RETURN n.name, r
- ----
-
-becomes:
 
 [source,cypher]
 ----
