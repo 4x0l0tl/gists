@@ -49,7 +49,6 @@ This idea with this approach is to measure the complexity of the variants of a m
 // hide
 [source,cypher]
 ----
-begin
 create(_0:`Directory` {`name`:"lucene/pylucene/trunk"})
 create(_1:`Directory` {`name`:"python", `path`:"lucene/pylucene/trunk/python"})
 create(_2)
@@ -1567,7 +1566,6 @@ create_613-[:`AFFECTED`]->_33
 create_613-[:`AFFECTED`]->_14
 create_613-[:`AFFECTED`]->_418
 create_613-[:`AFFECTED`]->_84
-;commit
 ----
 
 === Spread of Changes for Commit
